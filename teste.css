@@ -1,0 +1,26 @@
+/* Define a fonte padrão para o corpo da página */
+body {
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", 
+                  "Lucida Sans", Tahoma, sans-serif;
+    /* Usa uma hierarquia de fontes. Se a primeira não estiver disponível, 
+       a próxima será usada, terminando com uma fonte genérica sans-serif. */
+  }
+  
+  /* Estilização do elemento <section> */
+  section {
+    width: 600px; /* Define uma largura fixa de 600px */
+    border: 50px solid grey; /* Adiciona uma borda cinza de 50px em torno da seção */
+    padding: 50px; /* Adiciona um espaçamento interno de 50px */
+    background-color: #bbbbaa; /* Define um fundo em um tom de bege/cinza */
+    color: darkBlue; /* Define a cor do texto como azul escuro */
+    /* box-sizing: border-box; /* Faz com que largura e altura incluam bordas e padding */
+  }
+  
+  /* Estilização do elemento <article> */
+  article {
+    border: 5px solid blue; /* Adiciona uma borda azul de 5px em torno do artigo */
+    margin: 30px; /* Adiciona um espaçamento externo de 30px ao redor do artigo */
+    height: 75%; /* Define a altura como 75% do elemento pai (a seção) */
+    width: 50%; /* Define a largura como 50% do elemento pai */
+    background-color: #0088dd; /* Define um fundo azul */
+  }
