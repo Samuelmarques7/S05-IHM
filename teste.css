@@ -1,43 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fundo neutro para menos cansaço visual */
+    color: #333; /* Texto escuro para melhor leitura */
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+header {
+    background: linear-gradient(135deg, #FF6F61, #FF8A75); /* Coral suave */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
 
-        header {
-            background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-        }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
 
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
+.mensagens, .aulas, .noticias {
+    padding: 16px;
+    width: calc(100% - 32px); /* Mantendo 16px de margem lateral */
+    max-width: 800px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-        .mensagens {
-            background-color: #ffe4e1;
-            padding: 15px;
-            width: 80%;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
+/* Aplicando as novas cores */
+.mensagens {
+    background: #FFCCBC; /* Coral claro */
+    color: #6D1B00; /* Tom mais escuro para contraste */
+}
 
-        .aulas {
-            background-color: #e0f7fa;
-            padding: 15px;
-            width: 80%;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
+.aulas {
+    background: #008B8B; /* Azul-Petróleo */
+    color: white; /* Melhor contraste */
+}
 
-        .noticias {
-            background-color: #fce4ec;
-            padding: 15px;
-            width: 80%;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
+.noticias {
+    background: #FFDAB9; /* Pêssego claro para suavizar */
+    color: #333;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+    
+    .mensagens, .aulas, .noticias {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
