@@ -1,3 +1,11 @@
+/* Logo */
+.svg_logo_inatel {
+    width: 150px;  /* Ajuste o tamanho da logo */
+    height: auto;
+    margin-right: 20px;  /* Espaçamento à direita, caso queira */
+}
+
+/* Tema Claro (Light Mode) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -54,9 +62,33 @@ main {
     main {
         padding: 10px;
     }
-    
     .mensagens, .aulas, .noticias {
         width: 100%;
         border-radius: 10px;
     }
+}
+
+/* Tema Escuro (Dark Mode) */
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme header {
+    background: linear-gradient(135deg, #333, #555);
+}
+
+.dark-theme .mensagens {
+    background: #444;
+    color: #ffccbc;
+}
+
+.dark-theme .aulas {
+    background: #005f5f;
+    color: #ffffff;
+}
+
+.dark-theme .noticias {
+    background: #666;
+    color: #ffdab9;
 }
