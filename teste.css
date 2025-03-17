@@ -1,3 +1,60 @@
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.carrossel {
+    width: 80%;
+    max-width: 700px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrossel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.carrossel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carrossel-btn {
+    background: #FF6F61;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carrossel-btn:hover {
+    background: #FF8A75;
+}
+
+/* Modo escuro */
+.dark-theme .carrossel-item {
+    background: #444;
+    color: #fff;
+}
+
+
 /* Logo */
 .svg_logo_inatel {
     width: 150px;  /* Ajuste o tamanho da logo */

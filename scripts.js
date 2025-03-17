@@ -1,24 +1,22 @@
-<script>
-    const themeToggleButton = document.getElementById('themeToggle');
-    const body = document.body;
+document.addEventListener("DOMContentLoaded", function () {
+    const eventosContainer = document.getElementById("eventosContainer");
 
-    // Verifica se o tema está salvo no localStorage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        body.classList.add(savedTheme);
-    }
+    eventos.forEach(event => {
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-    // Adiciona o ouvinte de clique para o botão de alternar tema
-    themeToggleButton.addEventListener('click', () => {
-        // Alterna a classe de tema
-        body.classList.toggle('dark-theme');
-        body.classList.toggle('light-theme');
+        card.innerHTML = `
+            <img src="${event.image}" alt="${event.title}">
+            <div class="info">
+                <h3>${event.title}</h3>
+                <p>${event.description}</p>
+                <p>
+                    <span class="material-symbols-outlined icon">event</span> ${event.date} às ${event.time}
+                    <span class="material-symbols-outlined icon">pin_drop</span> ${event.location}
+                </p>
+            </div>
+        `;
 
-        // Salva a preferência do tema no localStorage
-        if (body.classList.contains('dark-theme')) {
-            localStorage.setItem('theme', 'dark-theme');
-        } else {
-            localStorage.setItem('theme', 'light-theme');
-        }
+        eventosContainer.appendChild(card);
     });
-</script>
+});
